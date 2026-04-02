@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEST - Is Anything Working?</title>
+</head>
+<body style="background: #090B10; color: white; padding: 40px; font-family: monospace;">
+  
+  <h1 style="color: #10B981;">✅ IF YOU SEE THIS - BASIC HTML WORKS</h1>
+  
+  <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px; margin: 20px 0;">
+    <h2>Test Results:</h2>
+    <ul>
+      <li>✅ HTML loaded successfully</li>
+      <li>✅ CSS styling works</li>
+      <li>✅ Browser is functioning</li>
+    </ul>
+  </div>
+  
+  <div style="background: rgba(99, 102, 241, 0.2); padding: 20px; border-radius: 8px; margin: 20px 0; border: 2px solid #6366F1;">
+    <h2>Next Test - JavaScript:</h2>
+    <p id="js-test">Testing...</p>
+  </div>
+  
+  <script>
+    // Test JavaScript
+    document.getElementById('js-test').innerHTML = '✅ JAVASCRIPT IS WORKING!';
+    document.getElementById('js-test').style.color = '#10B981';
+    
+    console.log('✅ TEST PAGE LOADED SUCCESSFULLY');
+    console.log('JavaScript: Working');
+    console.log('DOM: Working');
+    console.log('CSS: Working');
+    
+    // Add result to page
+    const resultsDiv = document.createElement('div');
+    resultsDiv.style.cssText = 'background: rgba(16, 185, 129, 0.2); padding: 20px; border-radius: 8px; margin: 20px 0; border: 2px solid #10B981;';
+    resultsDiv.innerHTML = '<h2 style="color: #10B981;">✅ ALL TESTS PASSED!</h2><p>Your browser can render HTML/CSS/JS correctly.</p>';
+    document.body.appendChild(resultsDiv);
+  </script>
+  
+  <div style="background: rgba(239, 68, 68, 0.2); padding: 20px; border-radius: 8px; margin: 20px 0; border: 2px solid #EF4444;">
+    <h2 style="color: #EF4444;">If your main app still shows blank:</h2>
+    <p>The issue is in the React code, not basic browser functionality.</p>
+    <p><strong>Check F12 Console for specific errors!</strong></p>
+  </div>
+  
+</body>
+</html>
